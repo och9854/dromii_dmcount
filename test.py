@@ -24,7 +24,7 @@ args = parser.parse_args()
 
 os.environ['CUDA_VISIBLE_DEVICES'] = args.device  # set vis gpu
 device = torch.device('cuda')
-
+print(f'using {device}')
 model_path = args.model_path
 crop_size = args.crop_size
 data_path = args.data_path
